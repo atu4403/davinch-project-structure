@@ -1,0 +1,26 @@
+#!/bin/bash
+
+PROJECT_NAME=$1
+
+# 引数が指定されていない場合、スクリプトを終了
+if [ -z "$PROJECT_NAME" ]; then
+    echo "Usage: $0 [Project Name]"
+    exit 1
+fi
+
+CURRENT_DIR=$(pwd)
+
+mkdir -p "$CURRENT_DIR/$PROJECT_NAME/RawMaterials/Video/MainFootage"
+mkdir -p "$CURRENT_DIR/$PROJECT_NAME/RawMaterials/Video/SupplementaryFootage"
+mkdir -p "$CURRENT_DIR/$PROJECT_NAME/RawMaterials/Audio/Narration"
+mkdir -p "$CURRENT_DIR/$PROJECT_NAME/RawMaterials/Audio/OnSiteAudio"
+mkdir -p "$CURRENT_DIR/$PROJECT_NAME/RawMaterials/Image/ProjectSpecificImages"
+mkdir -p "$CURRENT_DIR/$PROJECT_NAME/RawMaterials/Image/KeynoteSlides"
+mkdir -p "$CURRENT_DIR/$PROJECT_NAME/Exports"
+mkdir -p "$CURRENT_DIR/$PROJECT_NAME/SupportingMaterials"
+
+touch "$CURRENT_DIR/$PROJECT_NAME/SupportingMaterials/Storyboard.pdf"
+touch "$CURRENT_DIR/$PROJECT_NAME/SupportingMaterials/ShotList.xlsx"
+touch "$CURRENT_DIR/$PROJECT_NAME/SupportingMaterials/Script.md"
+
+echo "Project directory structure for '$PROJECT_NAME' created in $CURRENT_DIR/$PROJECT_NAME."

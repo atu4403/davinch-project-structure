@@ -1,0 +1,27 @@
+#!/bin/bash
+
+DIR_NAME=${1:-Davinch}
+CURRENT_DIR=$(pwd)
+
+mkdir -p "$CURRENT_DIR/$DIR_NAME/SharedMaterials/Music/Favorites"
+mkdir -p "$CURRENT_DIR/$DIR_NAME/SharedMaterials/Music/RoyaltyFreeMusic"
+mkdir -p "$CURRENT_DIR/$DIR_NAME/SharedMaterials/Music/PaidMusic"
+mkdir -p "$CURRENT_DIR/$DIR_NAME/SharedMaterials/SoundEffects/Favorites"
+mkdir -p "$CURRENT_DIR/$DIR_NAME/SharedMaterials/SoundEffects/NaturalSounds"
+mkdir -p "$CURRENT_DIR/$DIR_NAME/SharedMaterials/SoundEffects/SyntheticSounds"
+mkdir -p "$CURRENT_DIR/$DIR_NAME/SharedMaterials/SoundEffects/UniqueSoundEffects"
+mkdir -p "$CURRENT_DIR/$DIR_NAME/SharedMaterials/Image/Favorites"
+mkdir -p "$CURRENT_DIR/$DIR_NAME/SharedMaterials/Image/Photographs"
+mkdir -p "$CURRENT_DIR/$DIR_NAME/SharedMaterials/Image/Illustrations"
+mkdir -p "$CURRENT_DIR/$DIR_NAME/SharedMaterials/Image/BackgroundImages"
+mkdir -p "$CURRENT_DIR/$DIR_NAME/SharedMaterials/Video/Favorites"
+mkdir -p "$CURRENT_DIR/$DIR_NAME/SharedMaterials/Video/FreeStockVideos"
+mkdir -p "$CURRENT_DIR/$DIR_NAME/SharedMaterials/Video/PaidStockVideos"
+mkdir -p "$CURRENT_DIR/$DIR_NAME/SharedMaterials/VideoEffects/Favorites"
+mkdir -p "$CURRENT_DIR/$DIR_NAME/SharedMaterials/VideoEffects/Transitions"
+mkdir -p "$CURRENT_DIR/$DIR_NAME/SharedMaterials/VideoEffects/Filters"
+mkdir -p "$CURRENT_DIR/$DIR_NAME/SharedMaterials/VideoEffects/Templates"
+
+mkdir -p "$CURRENT_DIR/$DIR_NAME/Projects"
+
+echo "Created '$DIR_NAME' directory with SharedMaterials and Projects subdirectories."
